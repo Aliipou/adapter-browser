@@ -24,7 +24,10 @@ def browser_click(selector) -> str:
 
 # The tool registry + per-tool capability specs (capability = "tool:<name>").
 TOOLS = {"browser_navigate": browser_navigate, "browser_click": browser_click}
-SPECS = {"browser_navigate": {"capability": "tool:browser_navigate"}, "browser_click": {"capability": "tool:browser_click"}}
+SPECS: dict[str, dict[str, Any]] = {
+    "browser_navigate": {"capability": "tool:browser_navigate"},
+    "browser_click": {"capability": "tool:browser_click"},
+}
 
 
 def governed_tools(governor: Any) -> dict[str, Any]:
