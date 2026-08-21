@@ -1,5 +1,7 @@
 # adapter-browser
 
+**Live (graph):** [https://ali-adapter-browser.vercel.app](https://ali-adapter-browser.vercel.app)
+
 Decision OS / AuthGate **execution adapter** for browser automation
 (Playwright/Selenium-style actions). It exposes browser actions as **governed
 tools**: each tool is the effect *behind* a Policy Enforcement Point and runs
